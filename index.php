@@ -20,6 +20,8 @@
                     echo "Data Berhasil di Tambahkan";
                 } elseif ($pesan == "edit") {
                     echo "Data Berhasil di Edit";
+                } elseif ($pesan == "delete") {
+                    echo "Data Berhasil di Hapus";
                 }
             }
             ?>
@@ -50,7 +52,7 @@
                         <td><?php echo $data['pekerjaan'] ?></td>
                         <td style="text-align: center;">
                             <a href="./pages/form_edit.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
-                            <a href="#" class="btn btn-danger">Hapus</a>
+                            <a href="./actions/delete.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
                     <?php 
