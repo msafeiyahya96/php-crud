@@ -1,0 +1,61 @@
+body {
+    padding: 0 200px;
+}
+.judul {
+    display: flex;
+    justify-content: center;
+}
+
+.table-content {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    height: 25px;
+}
+
+td {
+    height: 40px;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    margin: 50px 0;
+}
+
+.btn {
+    background-color: red;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.btn-success {
+    background-color: rgb(38, 228, 9);
+    color: black;
+}
+
+.btn-warning {
+    background-color: orange;
+    color: black;
+}
+
+.btn-danger {
+    background-color: red;
+    color: whitesmoke;
+}
+
+.btn-success:hover, .btn-warning:hover, .btn-danger:hover {
+    opacity: 70%;
+}
