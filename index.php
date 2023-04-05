@@ -18,6 +18,8 @@
                 $pesan  = $_GET['pesan'];
                 if ($pesan == "input") {
                     echo "Data Berhasil di Tambahkan";
+                } elseif ($pesan == "edit") {
+                    echo "Data Berhasil di Edit";
                 }
             }
             ?>
@@ -47,7 +49,7 @@
                         <td><?php echo $data['alamat'] ?></td>
                         <td><?php echo $data['pekerjaan'] ?></td>
                         <td style="text-align: center;">
-                            <a href="#" class="btn btn-warning">Edit</a>
+                            <a href="./pages/form_edit.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
                             <a href="#" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
