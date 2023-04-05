@@ -59,3 +59,7 @@ a {
 .btn-success:hover, .btn-warning:hover, .btn-danger:hover {
     opacity: 70%;
 }
+
+table.form, th.form, td.form {
+    border: none;
+}

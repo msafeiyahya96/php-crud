@@ -12,7 +12,17 @@
         <h2>CRUD PHP + MySQL</h2>
     </div>
     <section>
-        <a href="#" class="btn btn-success">Tambah Data</a>
+        <h4 id="pesan">
+            <?php 
+            if (isset($_GET['pesan'])) {
+                $pesan  = $_GET['pesan'];
+                if ($pesan == "input") {
+                    echo "Data Berhasil di Tambahkan";
+                }
+            }
+            ?>
+        </h4>
+        <a href="./pages/form_input.php" class="btn btn-success">Tambah Data</a>
         <div class="table-content">
             <table>
                 <thead>

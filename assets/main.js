@@ -1,0 +1,1 @@
+document.getElementById('pesan').show(3000).hide();
